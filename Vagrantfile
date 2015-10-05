@@ -1,4 +1,5 @@
 Vagrant.configure(2) do |config|
+  config.vm.provider "virtualbox"
   config.vm.box = "ubuntu/trusty32"
 
   config.vm.network :private_network, ip: "192.168.50.2"
